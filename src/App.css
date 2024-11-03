@@ -1,38 +1,174 @@
-.App {
+*{
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background-color: #0D1B2A;
+  color: #ffffff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 500px){
+  .box div{
+    font-size: 6px;
+  }
+  .box div{
+    font-size: 6px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (min-width: 501px) and (max-width: 800px){
+  .box div{
+    font-size: 8px;
+  }
+  .box div{
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1400px){
+  .box div{
+    font-size: 10px;
+  }
+  .box div{
+    font-size: 10px;
+  }
+}
+
+.box {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.margin div{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.hi {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.hi div{
+  flex: 1;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+ul {
+  font-size: 2em;
+  text-align: left;
+}
+
+.one {
+  background-color: #0D1B2A;
+}
+
+.two {
+  background-color: #1B263B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  max-width: 100%;
+  border-radius: 20px;
+  border: solid 2px white;
+}
+
+.profile {
+  background-color: #3A506B;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.flex-container{
+  display: flex;
+  align-items: center;
+}
+
+.profilepic{
+  display: flex;
+}
+
+.links{
+  width: 100%;
+}
+
+.links a{
+  font-size: 2.5em;
   color: white;
+  text-decoration: none;
+  padding: 20px;
+  margin: 10px;
+  border: solid white 3px;
+  border-radius: 20px;
+  background-color: #3A506B;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.links a:hover{
+  background-color: #1B263B;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile p{
+  text-align: left;
+}
+
+.pics{
+  display: flex;
+}
+
+.pics img{
+  width: 40%;
+}
+
+.three {
+  background-color: #283C5F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four {
+  background-color: #3A506B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #0D1B2A;
+  font-size: 2em;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 1 !important;
 }
