@@ -39,6 +39,11 @@ const Pictures = () => {
                 </div>
                 <div className="box three">
                     <div>
+                        <h1>this has to be here for consistency purposes, i can add smth else that i might have forgotten</h1>
+                    </div>
+                </div>
+                <div className="box four">
+                    <div>
                         <h1>Join Us!</h1>
                         <a href="https://example.com/" target="_blank" rel="noopener noreferrer">
                             <button>Sign Up</button>

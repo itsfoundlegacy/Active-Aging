@@ -3,6 +3,7 @@ import Home from './pages/home';
 import Pictures from './pages/pictures';
 import Team from './pages/team';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className='App'>
       <Router>
+      <ScrollToTop></ScrollToTop>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/home" element={<Home />} />
