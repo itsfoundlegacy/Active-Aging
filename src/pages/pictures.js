@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import image from "../components/image.png";
 import one from "../components/one.JPG";
 import two from "../components/two.JPG";
 import three from "../components/three.JPG";
@@ -16,30 +15,24 @@ const Pictures = () => {
                         <h1>What We Do</h1>
                     </div>
                 </div>
-                <div className="box two pics">
-                    <div className="box hi margin">
-                        <div>
-                            <h1>Charity Events</h1>
-                            <ul>
-                                <li>some event</li>
-                                <li>some significant milestone</li>
-                            </ul>
-                        </div>
-                        <div className="row">
-                            <div className="column">
-                                <img src={one}></img>
-                                <img src={two}></img>
-                            </div>
-                            <div className="column">
-                                <img src={three}></img>
-                                <img src={four}></img>
-                            </div>
-                        </div>
+                <div className="box two">
+                    <div>
+                        <h1>Charity Events</h1>
+                        <h2>(see below)</h2>
                     </div>
                 </div>
-                <div className="box three">
-                    <div>
-                        <h1>this has to be here for consistency purposes, i can add smth else that i might have forgotten</h1>
+                <div className="box three pics">
+                    <div className="box hi">
+                        <div className="row">
+                            <div className="column">
+                                <img src={one} alt=""></img>
+                                <img src={two} alt=""></img>
+                            </div>
+                            <div className="column">
+                                <img src={three} alt=""></img>
+                                <img src={four} alt=""></img>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="box four">

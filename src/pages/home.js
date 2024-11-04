@@ -9,11 +9,11 @@ const Home = () => {
                 <div className="box one">
                     <Navbar />
                     <div className="box hi">
-                        <div>
+                        <div id='title'>
                             <h1>Active Aging</h1>
                         </div>
                         <div id="logo">
-                            <img src={image}></img>
+                            <img src={image} alt=""></img>
                         </div>
                     </div>
                 </div>
@@ -30,15 +30,15 @@ const Home = () => {
                 <div className="box three">
                     <div className="box hi margin">
                         <div>
-                            <h2 id="strive">We strive to:</h2>
+                            <h1>Our Goals</h1>
+                        </div>
+                        <div>
+                            <h2>We strive to:</h2>
                             <ul>
                                 <li>Do something Do something Do something Do something Do something</li>
                                 <li>Do something Do something Do something Do something</li>
                                 <li>Do something Do something Do something</li>
                             </ul>
-                        </div>
-                        <div>
-                            <h1>Our Goals</h1>
                         </div>
                     </div>
                 </div>
