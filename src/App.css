@@ -1,5 +1,6 @@
 *{
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -41,8 +42,8 @@ body {
 }
 
 .margin div{
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .hi {
@@ -100,15 +101,31 @@ img{
 }
 
 .profile {
+  display: flex;
+  flex-direction: column;
   background-color: #0D1B2A;
   padding: 20px;
   border-radius: 20px;
+  border: solid 2px white;
+}
+
+.profile-lesser{
+  display: flex;
+  flex-direction: column;
+  background-color: #0D1B2A;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .flex-container{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.flex-container-lesser{
+  text-align: left;
+  max-width: 256px;
 }
 
 .profilepic{
@@ -126,7 +143,7 @@ img{
   text-decoration: none;
   padding: 20px;
   margin: 10px;
-  border: solid white 3px;
+  border: solid white 2px;
   border-radius: 20px;
   background-color: #0D1B2A;
   transition: 0.3s;
@@ -168,16 +185,16 @@ button {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  background-color: #0D1B2A;
+  background-color: #1B263B;
   font-size: 2em;
-  border: none;
+  border: solid 2px white;
   border-radius: 20px;
-  padding: 20px;
+  padding: 15px;
   color: white;
-  opacity: 0.75;
   transition: 0.3s;
 }
 
 button:hover {
-  opacity: 1 !important;
+  background-color: #283C5F !important;
+  cursor: pointer;
 }

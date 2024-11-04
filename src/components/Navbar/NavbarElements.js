@@ -7,20 +7,20 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-    color: #cccccc;
+    color: #fff;
     list-style-type: none;
     text-decoration: none;
     height: 100%;
     cursor: pointer;
     &.active {
-        color: #4169E1;
+        font-weight: 700;
     }
     font-size: 2em;
     padding: 10px;
     margin: 10px;
     transition: 0.3s;
     &:hover{
-        color: #ffffff
+        color: #ADD8E6;
     }
 `;
 
