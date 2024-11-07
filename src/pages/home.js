@@ -5,6 +5,7 @@ import image from "../components/image.png"
 const Home = () => {
     return (
         <>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <div class="container">
                 <div className="box one">
                     <Navbar />
@@ -43,10 +44,18 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="box four">
-                    <div>
-                        <h1>Join Us!</h1>
+                    <div className="join">
+                        <h1>Join Us</h1>
                         <a href="https://example.com/" target="_blank" rel="noopener noreferrer">
                             <button>Sign Up</button>
+                        </a>
+                    </div>
+                    <div className="join">
+                        <h1>Follow</h1>
+                        <a href="https://example.com/" target="_blank" rel="noopener noreferrer">
+                            <button>
+                                <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="fa fa-instagram"> </a>
+                            </button>
                         </a>
                     </div>
                 </div>

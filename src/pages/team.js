@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import image from "../components/image.png";
 
+
 const Team = () => {
     return (
         <>
@@ -15,7 +16,8 @@ const Team = () => {
                 </div>
                 <div className="box two margin">
                     <div className="profile">
-                        <h2>Ishaan A: Founder</h2>
+                        <h2>Ishaan Anand</h2>
+                        <h3>Founder</h3>
                         <div className="flex-container">
                             <div className="profilepic">
                                 <img src={image} alt=""></img>
@@ -33,7 +35,8 @@ const Team = () => {
                         </div>
                     </div>
                     <div className="profile">
-                        <h2>Sriram B: Founder</h2>
+                        <h2>Sriram Banigallapati</h2>
+                        <h3>Founder</h3>
                         <div className="flex-container">
                             <div className="profilepic">
                                 <img src={image} alt=""></img>
@@ -51,7 +54,8 @@ const Team = () => {
                         </div>
                     </div>
                     <div className="profile">
-                        <h2>Aditya S: Founder</h2>
+                        <h2>Aditya Shah</h2>
+                        <h3>Founder</h3>
                         <div className="flex-container">
                             <div className="profilepic">
                                 <img src={image} alt=""></img>
@@ -69,25 +73,54 @@ const Team = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className="box three margin">
-                    <div className="profile-lesser">
-                        <img src={image} alt="" className="profilepic"></img>
-                        <div className="flex-container-lesser">
-                            <h2>Pranava Behera</h2>
-                            <h3><i>Head of Technology</i></h3>
+                    <div className="profile-lesser profile-mid">
+                            <img src={image} alt="" className="profilepic"></img>
+                            <div className="flex-container-lesser">
+                                <h2>Shreyas Batra</h2>
+                                <h3><i>Chief of Staff</i></h3>
+                            </div>
+                    </div>
+                </div>
+                <div className="box four margin">
+                    <div className="profile-lesser-container">
+                        <div className="profile-lesser">
+                            <img src={image} alt="" className="profilepic-lesser"></img>
+                            <div className="flex-container-lesser">
+                                <h2>Yashwin Kothyala</h2>
+                                <h3><i>Director of Outreach</i></h3>
+                            </div>
+                        </div>
+                        <div className="profile-lesser">
+                            <img src={image} alt="" className="profilepic-lesser"></img>
+                            <div className="flex-container-lesser">
+                                <h2>Victoria Bartusik</h2>
+                                <h3><i>Director of Creative Design</i></h3>
+                            </div>
+                        </div>
+                        <div className="profile-lesser">
+                            <img src={image} alt="" className="profilepic-lesser"></img>
+                            <div className="flex-container-lesser">
+                                <h2>Alex Wordel</h2>
+                                <h3><i>Director of Programs</i></h3>
+                            </div>
+                        </div>
+                        <div className="profile-lesser">
+                            <img src={image} alt="" className="profilepic-lesser"></img>
+                            <div className="flex-container-lesser">
+                                <h2>Aum Patel</h2>
+                                <h3><i>Director of Fundraising</i></h3>
+                            </div>
+                        </div>
+                        <div className="profile-lesser">
+                            <img src={image} alt="" className="profilepic-lesser"></img>
+                            <div className="flex-container-lesser">
+                                <h2>Pranava Behera</h2>
+                                <h3><i>Director of Technology</i></h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div className="box four">
-                    <div>
-                        <h1>Join Us!</h1>
-                        <a href="https://example.com/" target="_blank" rel="noopener noreferrer">
-                            <button>Sign Up</button>
-                        </a>
-                    </div>
-                </div>
+                </div>           
             </div>
         </>
     );

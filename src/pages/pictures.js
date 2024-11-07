@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import one from "../components/one.JPG";
-import two from "../components/two.JPG";
-import three from "../components/three.JPG";
-import four from "../components/four.JPG";
+import SimpleSlider from "../components/Slider/Slider";
+import SimpleSlider2 from "../components/Slider/Slider2";
+import SimpleSlider3 from "../components/Slider/Slider3";
+
 
 const Pictures = () => {
     return (
         <>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <div class="container">
                 <div className="box one">
                     <Navbar />
@@ -17,29 +18,33 @@ const Pictures = () => {
                 </div>
                 <div className="box two">
                     <div>
-                        <h1>Charity Events</h1>
-                        <h2>(see below)</h2>
+                        <h1>Charity Events<br />(see below)</h1>
                     </div>
                 </div>
-                <div className="box three pics">
-                    <div className="box hi">
-                        <div className="row">
-                            <div className="column">
-                                <img src={one} alt=""></img>
-                                <img src={two} alt=""></img>
-                            </div>
-                            <div className="column">
-                                <img src={three} alt=""></img>
-                                <img src={four} alt=""></img>
-                            </div>
-                        </div>
+                <div className="box three slider">
+                    <div className="slider-wrapper">
+                        <SimpleSlider></SimpleSlider>
+                    </div>
+                    <div className="slider-wrapper">
+                        <SimpleSlider2></SimpleSlider2>
+                    </div>
+                    <div className="slider-wrapper">
+                        <SimpleSlider3></SimpleSlider3>
                     </div>
                 </div>
                 <div className="box four">
-                    <div>
-                        <h1>Join Us!</h1>
+                    <div className="join">
+                        <h1>Join Us</h1>
                         <a href="https://example.com/" target="_blank" rel="noopener noreferrer">
                             <button>Sign Up</button>
+                        </a>
+                    </div>
+                    <div className="join">
+                        <h1>Follow</h1>
+                        <a href="https://example.com/" target="_blank" rel="noopener noreferrer">
+                            <button>
+                                <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="fa fa-instagram"> </a>
+                            </button>
                         </a>
                     </div>
                 </div>
