@@ -1,8 +1,7 @@
 import './App.css';
 import Home from './pages/home';
-import Pictures from './pages/pictures';
+import Events from './pages/events';
 import Team from './pages/team';
-import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
@@ -10,17 +9,22 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 function App() {
   return (
     <div className='App'>
-      <Router>
+      <Router forceRefresh={true}>
       <ScrollToTop></ScrollToTop>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/home" element={<Home />} />
         <Route path="/team" element={<Team />} />
-        <Route path="/pictures" element={<Pictures />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
       </Router>
     </div>
   );
 }
+
+/* TODO: 
+  Update Pictures
+  Colors
+*/
 
 export default App;

@@ -12,13 +12,15 @@ const Navbar = () => {
                     <NavLink to="/team" activeStyle>
                         Team
                     </NavLink>
-                    <NavLink to="/pictures" activeStyle>
-                        Pictures
+                    <NavLink to="/events" activeStyle>
+                        Events
                     </NavLink>
                 </NavMenu>
             </Nav>
         </>
     );
 };
+
+
 
 export default Navbar;
